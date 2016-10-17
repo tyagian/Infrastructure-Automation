@@ -1,0 +1,11 @@
+upstream web_backend {
+        server 10.102.62.236;
+    server 10.102.61.135;
+}
+server {
+    listen 80;
+    location / {
+        proxy_set_header XÂ­ForwardedÂ­For $proxy_add_x_forwarded_for;
+        proxy_pass http://web_backend;
+    }
+}

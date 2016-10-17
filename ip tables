@@ -1,0 +1,17 @@
+IP TABLES:
+--------------
+
+sudo iptables -A INPUT -p tcp --match multiport --dports 23,100,25,20,21 -j DROP
+sudo iptables -I INPUT -s 10.103.12.9 -j ACCEPT
+sudo iptables -I INPUT -s 10.102.62.94 -j ACCEPT
+sudo iptables -I INPUT -s 10.103.12.118 -j ACCEPT
+sudo iptables -A OUTPUT -p icmp --icmp-type echo-request -j ACCEPT
+sudo iptables -A INPUT -p icmp --icmp-type echo-reply -j ACCEPT
+sudo iptables -A LOGGING -j DROP
+sudo iptables -A INPUT -p ICMP --icmp-type 8 -j DROP
+sudo iptables -A INPUT -j REJECT
+
+# to check iptables:
+$sudo iptables -L
+# To Flush
+$sudo iptables -F

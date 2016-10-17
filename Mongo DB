@@ -1,0 +1,55 @@
+1. To run : $mongod
+   To enter into database: $mongo 
+2. Change ip address of socket connections. 
+$cd etc/mongod.conf
+Go to Database:
+>use test
+
+Find:
+db.userlist.find()
+
+Insert:
+db.userlist.insert({'username' : 'Michael','email' : 'anuj@gmail.com','fullname' : 'anuj tyagi','age' : 24,'location' : 'San Francisco','gender' : 'Male'})
+
+MongoDB LOgs::
+2016-03-18T23:15:10.694-0400 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2016-03-18T23:15:10.694-0400 I CONTROL  [initandlisten] 
+2016-03-18T23:15:10.695-0400 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2016-03-18T23:15:10.696-0400 I NETWORK  [initandlisten] waiting for connections on port 27017
+2016-03-18T23:15:10.696-0400 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2016-03-18T23:15:12.859-0400 I NETWORK  [initandlisten] connection accepted from 10.102.62.236:33740 #1 (1 connection now open)
+2016-03-18T23:15:12.959-0400 I NETWORK  [initandlisten] connection accepted from 10.102.62.236:33742 #2 (2 connections now open)
+2016-03-18T23:15:12.960-0400 I NETWORK  [initandlisten] connection accepted from 10.102.62.236:33744 #3 (3 connections now open)
+2016-03-18T23:15:12.961-0400 I NETWORK  [initandlisten] connection accepted from 10.102.62.236:33746 #4 (4 connections now open)
+2016-03-18T23:15:12.961-0400 I NETWORK  [initandlisten] connection accepted from 10.102.62.236:33748 #5 (5 connections now open)
+2016-03-18T23:15:12.962-0400 I NETWORK  [initandlisten] connection accepted from 10.102.62.236:33750 #6 (6 connections now open)
+2016-03-18T23:15:13.214-0400 I NETWORK  [conn1] end connection 10.102.62.236:33740 (5 connections now open)
+2016-03-18T23:15:23.893-0400 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56888 #7 (6 connections now open)
+2016-03-18T23:23:31.867-0400 I NETWORK  [initandlisten] connection accepted from 10.102.61.135:57452 #8 (7 connections now open)
+2016-03-18T23:23:31.873-0400 I NETWORK  [conn8] end connection 10.102.61.135:57452 (6 connections now open)
+2016-03-18T23:27:03.186-0400 I NETWORK  [initandlisten] connection accepted from 10.102.61.135:57458 #9 (7 connections now open)
+2016-03-18T23:27:03.190-0400 I NETWORK  [conn9] end connection 10.102.61.135:57458 (6 connections now open)
+2016-03-18T23:28:29.439-0400 I NETWORK  [initandlisten] connection accepted from 10.102.61.135:57460 #10 (7 connections now open)
+2016-03-18T23:28:29.443-0400 I NETWORK  [conn10] end connection 10.102.61.135:57460 (6 connections now open)
+2016-03-18T23:30:17.195-0400 I NETWORK  [initandlisten] connection accepted from 10.102.61.135:57816 #11 (7 connections now open)
+2016-03-18T23:30:17.202-0400 I NETWORK  [conn11] end connection 10.102.61.135:57816 (6 connections now open)
+2016-03-18T23:31:16.714-0400 I NETWORK  [initandlisten] connection accepted from 10.102.61.135:57824 #12 (7 connections now open)
+2016-03-18T23:31:16.718-0400 I NETWORK  [conn12] end connection 10.102.61.135:57824 (6 connections now open)
+2016-03-18T23:33:09.283-0400 I NETWORK  [initandlisten] connection accepted from 10.102.61.135:57906 #13 (7 connections now open)
+2016-03-18T23:33:09.295-0400 I NETWORK  [conn13] end connection 10.102.61.135:57906 (6 connections now open)
+2016-03-18T23:33:09.297-0400 I NETWORK  [initandlisten] connection accepted from 10.102.61.135:57908 #14 (7 connections now open)
+2016-03-18T23:33:09.298-0400 I NETWORK  [initandlisten] connection accepted from 10.102.61.135:57910 #15 (8 connections now open)
+2016-03-18T23:33:09.298-0400 I NETWORK  [initandlisten] connection accepted from 10.102.61.135:57912 #16 (9 connections now open)
+2016-03-18T23:33:09.299-0400 I NETWORK  [initandlisten] connection accepted from 10.102.61.135:57914 #17 (10 connections now open)
+2016-03-18T23:33:09.300-0400 I NETWORK  [initandlisten] connection accepted from 10.102.61.135:57916 #18 (11 connections now open)
+2016-03-19T02:12:33.630-0400 I COMMAND  [conn5] command nodetest2.userlist command: insert { insert: "userlist", writeConcern: { w: 1 }, ordered: true, documents: [ { _id: ObjectId('56ecedd117e9c1fa104e58f8') } ] } ninserted:1 keyUpdates:0 writeConflicts:0 numYields:0 reslen:40 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 163ms
+2016-03-19T03:21:29.712-0400 I NETWORK  [conn18] end connection 10.102.61.135:57916 (10 connections now open)
+2016-03-19T03:21:29.712-0400 I NETWORK  [conn17] end connection 10.102.61.135:57914 (10 connections now open)
+2016-03-19T03:21:29.712-0400 I NETWORK  [conn16] end connection 10.102.61.135:57912 (10 connections now open)
+2016-03-19T03:21:29.712-0400 I NETWORK  [conn15] end connection 10.102.61.135:57910 (10 connections now open)
+2016-03-19T03:21:29.712-0400 I NETWORK  [conn14] end connection 10.102.61.135:57908 (10 connections now open)
+2016-03-19T03:49:56.627-0400 I NETWORK  [conn6] end connection 10.102.62.236:33750 (5 connections now open)
+2016-03-19T03:49:56.627-0400 I NETWORK  [conn5] end connection 10.102.62.236:33748 (5 connections now open)
+2016-03-19T03:49:56.627-0400 I NETWORK  [conn4] end connection 10.102.62.236:33746 (5 connections now open)
+2016-03-19T03:49:56.628-0400 I NETWORK  [conn3] end connection 10.102.62.236:33744 (5 connections now open)
+2016-03-19T03:49:56.628-0400 I NETWORK  [conn2] end connection 10.102.62.236:33742 (5 connections now open

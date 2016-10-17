@@ -1,0 +1,10 @@
+Commands and instruction to setup enviroment
+1. Check Logs
+cat var/log/syslog 
+2. Create password less ssh communication. 
+a. Install Openssh if not installed.
+b. share public key to peer. #ssh-copy-id <dest ip>
+c. Map alias-name of destination. 
+#cd /home/user/.ssh/config
+#sudo nano config
+map hostname with their ip's.
