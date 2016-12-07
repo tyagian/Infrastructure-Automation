@@ -1,4 +1,4 @@
-# Infrastrcuture Configuration
+# Infrastructure Configuration
 
 Use case for creating small set-up of IT infrastrcture by using:
 
