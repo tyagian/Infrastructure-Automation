@@ -7,5 +7,5 @@ Use case for creating small set-up of IT infrastrcture by using:
 3. IP Tables to filter the traffic
 4. RestAPI and REST client in Python to perform CRUD operations
 5. MongoDB used to create database of RESTAPI
-DNS, DHCP server configuration: https://en.wikiversity.org/wiki/Data_Networking/Fall_2015/ADSU
+6. DNS, DHCP server configuration: https://en.wikiversity.org/wiki/Data_Networking/Fall_2015/ADSU
 
