@@ -1,6 +1,6 @@
 # Infrastructure Configuration
 
-Use case for creating small set-up of IT infrastrcture by using:
+Use case for creating small set-up of IT infrastructure by using:
 
 1. Ansible for orchestration to install application on multiple server nodes
 2. Nginx as load balancer 
